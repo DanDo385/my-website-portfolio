@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .body-background {
-    background-image: url('/images/blockchain-dots.jpeg');
+    background-image: url('/blockchaindots.jpeg');
     background-size: cover;
     background-position: center;
 }
