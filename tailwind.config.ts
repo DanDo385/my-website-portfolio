@@ -1,4 +1,4 @@
-// Import types from TailwindCSS for better type checking.
+// tailwind.config.js
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -12,7 +12,7 @@ const config: Config = {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "blockchain-dots": "url('/images/blockchaindots.jpeg')", // Your custom background image
+        "education-background": "url('/blockchaindots.jpeg')", // Add your custom background image for the education page
       },
     },
   },
@@ -21,9 +21,10 @@ const config: Config = {
   },
   plugins: [
     require('daisyui'),
-    require('@tailwindcss/forms'), // Include @tailwindcss/forms here
+    require('@tailwindcss/forms'),
     // Add other plugins as needed
   ],
 };
 
 export default config;
+

@@ -14,17 +14,21 @@ const Certificates = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4">
-      <Navbar />
-      <Carousel>
+    <>
+      <div>
+        <Navbar />
+        <div className="container mx-auto px-4">
+        <Carousel>
         {images.map((src, index) => (
           <div key={index}>
             <img src={src} alt={`Certificate ${index + 1}`} />
             <p className="legend">Certificate {index + 1}</p>
           </div>
         ))}
-      </Carousel>
-    </div>
+        </Carousel>
+        </div>
+      </div>
+    </>
   );
 }
 

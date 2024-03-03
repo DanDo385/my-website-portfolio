@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tailwindcss/forms": "^0.5.7",
     "daisy": "^0.2.0",
     "daisyui": "^4.7.2",
     "hero-slider": "^3.2.1",
