@@ -1,7 +1,8 @@
 // src/pages/certificates.tsx
-import React from 'react';
+import Navbar from '@/components/Navbar';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // This imports the carousel styles
+
 
 const Certificates = () => {
   // Assuming you have an array of image paths. Adjust paths as necessary.
@@ -14,6 +15,7 @@ const Certificates = () => {
 
   return (
     <div className="container mx-auto px-4">
+      <Navbar />
       <Carousel>
         {images.map((src, index) => (
           <div key={index}>
