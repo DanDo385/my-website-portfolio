@@ -15,7 +15,7 @@ const Certificates = () => {
 
   return (
     <>
-      <div>
+      <div className="bg-education-background bg-cover bg-center h-screen">
         <Navbar />
         <div className="container mx-auto px-4">
         <Carousel>
