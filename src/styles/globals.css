@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.body-background {
+    background-image: url('/images/blockchain-dots.jpeg');
+    background-size: cover;
+    background-position: center;
+}
