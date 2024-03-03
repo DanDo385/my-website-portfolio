@@ -1,16 +1,15 @@
-import Navbar from "@/components/Navbar";
-import Image from 'next/image';
-import { useRef, useState, useEffect } from 'react';
-import SwiperCore, { Navigation, Pagination } from 'swiper';
-import { Swiper, SwiperSlide } from 'react-responsive-carousel';gacp 
-
 // pages/education.tsx
+import Navbar from "@/components/Navbar";
+import PennStateInfo from '../components/PennStateInfo'; // Adjust the path as necessary
+
+
+
 const Education = () => {
   return (
     <>
     <Navbar />
     <div className="bg-education-background bg-cover bg-center h-screen">
-          {/* Content of your education page goes here */}
+          <PennStateInfo />
     </div>
     </>
   );
