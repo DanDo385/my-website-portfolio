@@ -1,31 +1,30 @@
-// tailwind.config.js
-import type { Config } from "tailwindcss";
-
-const config: Config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  mode: "jit",
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
+      opacity: ["disabled"],
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "education-background": "url('/blockchaindots.jpeg')", // Add your custom background image for the education page
+        'custom-pattern': "url('/image1.jpeg')",
       },
     },
   },
+  variants: {
+    extend: {
+      opacity: ["disabled"],
+    },
+  },
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("daisyui")
+  ],
   daisyui: {
     themes: ["nord"],
   },
-  plugins: [
-    require('daisyui'),
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/typography'),
-    // Add other plugins as needed
-  ],
 };
 
-export default config;
 
